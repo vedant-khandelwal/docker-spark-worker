@@ -1,5 +1,5 @@
 
-FROM gcr.io/falkonry-tercel/spark-base:1.6.0
+FROM docker.io/falkonry/spark-base:latest
 
 # Spark Worker Port
 EXPOSE 7078
