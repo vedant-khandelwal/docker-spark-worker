@@ -3,7 +3,6 @@ FROM docker.io/falkonry/spark-base:1.6.0
 
 RUN apt-get update && apt-get install -y wget
 
-apt-get install libgfortran3
 RUN apt-get install -y gfortran && apt-get install -y libopenblas-base libatlas3-base
 
 # Spark Worker Port
