@@ -1,5 +1,5 @@
 
-FROM docker.io/falkonry/spark-base:1.6.0
+FROM docker.io/falkonry/spark-base:j8.latest
 
 # Spark Worker Port
 EXPOSE 7078
@@ -15,3 +15,4 @@ EXPOSE 8081
 
 ENTRYPOINT exec "$SPARK_HOME"/bin/spark-class org.apache.spark.deploy.worker.Worker \
   --port 7078 --webui-port 8081 "$SPARK_MASTER_URL"
+
