@@ -14,5 +14,5 @@ EXPOSE 8081
 #ENV SPARK_WORKER_DIR
 
 ENTRYPOINT exec "$SPARK_HOME"/bin/spark-class org.apache.spark.deploy.worker.Worker \
-  --port 7078 --webui-port 8081 "$SPARK_MASTER_URL"
+  --port 7078 --webui-port 8081 -d /tmp/work "$SPARK_MASTER_URL"
 
