@@ -1,5 +1,5 @@
 
-FROM docker.io/falkonry/spark-base:spark-2.1.0-logs
+FROM docker.io/falkonry/spark-base:spark-2.1.0-rffix
 
 # Spark Worker Port
 EXPOSE 7078
